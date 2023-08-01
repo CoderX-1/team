@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+    <title>team</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="bg-transparent w-full z-20 top-0 left-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center">
+                    <img src="/img/blacklogo.png" class="h-8 mr-3" alt="Logo">
+                </a>
+                <div class="flex md:order-2">
+
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 items-center justify-between hidden w-full md:flex md:w-auto md:order-first mr-4">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:hover:text-blue-700 md:p-0"
+                                aria-current="page">Product</a>
+                        </li>
+                        <li>
+                            <a href="blog.html"
+                                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        </li>
+                        <li>
+                            <a href="support.html"
+                                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Support</a>
+                        </li>
+                        <li>
+                            <a href="login.html"
+                                class="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 hover:text-blue-700 md:dark:hover:bg-transparent dark:border-gray-700">Log
+                                In</a>
+                        </li>
+                    </ul>
+                    <button type="button"
+                        class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:block">Get
+                        Access</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <main>
+
+
+            <section class="bg-white flex flex-col justify-center">
+                <div class="sm:w-3/5 py-8 px-4 mx-auto lg:py-16 grid gap-8 lg:gap-16">
+                    <div class="flex flex-col justify-center">
+                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl">
+                            Data exported by Team Cloud organization administrators contained private files</h1>
+                        <div class="flex items-center mt-8">
+                            <img class="w-10 h-10 rounded-full mr-4" src="/img/markimg.png" alt="Avatar">
+                            <div class="text-sm">
+                                <p class="text-gray-900 leading-none">Mark Brooklyn</p>
+                                <p class="text-gray-600">June 14, 2023</p>
+                            </div>
+                        </div>
+
+            </section>
+
+            <div class="flex flex-col items-center">
+                <div>
+                    <figure>
+                        <img class="" src="img/supportimg.png" alt="">
+                    </figure>
+                </div>
+                <div class="items-center w-3/4 space-y-4">
+                    <p class="mt-12">Administrators of Team Cloud organizations can export public data from their
+                        organization via the organization settings menu. The exports include all the data that appears
+                        in public streams, and can be used to migrate from Team Cloud to self-hosting Team. Note that
+                        exporting private data is a separate process that requires contacting Team Support.</p>
+
+                    <p> Due to a bug in the public export code, exports of public data contained all uploaded files,
+                        even those from private messages and private streams. This may have allowed organization owners
+                        or administrators to extract uploaded files that they were not otherwise allowed to access. The
+                        content of non-public messages was never included in public exports.</p>
+
+                    <p>This bug has existed since the public export feature was implemented in August 2019. We have
+                        deleted all existing Team Cloud exports from our servers, and will be making changes to
+                        auto-expire all exports after 7 days in the future. This bug was fixed for self-hosted users in
+                        the Team Server 5.4 release.</p>
+
+                    <p>We have notified by email all administrators and users in non-deactivated Team Cloud
+                        organizations who may have been impacted by this bug. As many organizations have never exported
+                        their data, most Team Cloud users were not affected.</p>
+
+                    <p> We would like to thank Antoine Benoist for bringing this issue to our attention.</p>
+
+                </div>
+
+                <div class="mt-24 w-3/4">
+
+                    <p class="font-bold mb-1 text-pink-300">Written by</p>
+                    <div class="flex">
+                        <img class="w-10 h-10 rounded-full mr-4" src="/img/markimg.png" alt="Avatar">
+                        <div class="text-sm">
+                            <p class="text-gray-900 leading-none">Mark Brooklyn</p>
+                            <p class="text-gray-600">COO at Team. Author of the upcoming book on <br> Team Management
+                                and Leadership.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+            <hr class="my-16">
+
+
+            
+               <div class="mb-16">
+                <div class="flex justify-center w-3/4 sm:w-6/12">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Join the conversation</label>
+                   </div>
+                    <div class="flex justify-center">
+                        <figure>
+                            <img class="mr-1 w-8" src="/img/Avatar1.png" alt="">
+                        </figure>
+                <textarea id="message" rows="4"
+                    class="block w-2/3 p-2.5 text-sm text-gray-900 bg-transparent rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Comments"></textarea>
+                </div>
+               </div>
+
+    
+    <footer
+    class="bg-[#232340] text-center text-neutral-600 lg:text-left">
+    
+    <!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+    <div class="mx-6 pt-10 text-center md:text-left">
+      <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <!-- Tailwind Elements section -->
+        <div class="">
+          <img class="mb-4 flex items-center justify-center w-24 md:justify-start" src="/img/Logotype.png" alt="">
+          <p class="text-white">Collaboration platform for mordern team </p>
+        </div>
+        <!-- Products section -->
+        <div class="">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-blue-800">Company</h6>
+          <p class="mb-4">
+            <a href="/index.html" class="text-neutral-600 dark:text-neutral-200"
+              >Product</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="blog.html" class="text-neutral-600 dark:text-neutral-200"
+              >Blog</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="support.html" class="text-neutral-600 dark:text-neutral-200"
+              >Support</a
+            >
+          </p>
+        </div>
+    
+        <div class="">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-blue-800">Features</h6>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >Screen Sharing</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >iOS & Android Apps</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >File Sharing</a
+            >
+          </p>
+          <p>
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >User Managment</a
+            >
+          </p>
+        </div>
+        <!-- Useful links section -->
+        <div class="">
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-blue-800">Contact Us</h6>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >info@teamapp.com</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >1-800-200-300</a
+            >
+          </p>
+          <p class="mb-4">
+            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
+              >1010 Sunset Blv.
+              Palo Alto, California</a>
+          </p>
+        </div>
+    
+        <!-- Contact section -->
+        <div>
+          <h6
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-blue-800">Stay up to date </h6>
+          <p class="mb-4 flex items-center justify-center md:justify-start text-white">Subscribe to our newseller</p>
+          <form>
+            <div>
+              <input type="email" id="email"
+                class="shadow-sm bg-slate-600 border border-gray-300 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:border-gray-600 text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                placeholder="Email" required>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!--Copyright section-->
+    <div class="bg-[#232340] p-6 text-left">
+      <span>© Copyright Team Inc.</span>
+    </div>
+    </footer>
+
+</body>
+
+</html>
