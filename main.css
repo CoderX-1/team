@@ -1853,10 +1853,7 @@ video {
     line-height: 1.75rem;
   }
 }
-.banner{
+.bgimg{
   background-image: url(
     img/banner.png);
-  background-repeat: no-repeat;
-  background-position: center;
-      background-size: cover;
 }
