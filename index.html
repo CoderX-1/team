@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
   <title>team</title>
 </head>
@@ -158,7 +160,7 @@
         class="flex justify-center mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
         What people say about Team</h1>
 
-      <div class="container-fluid scrolling-wrapper row flex-row flex-nowrap pb-4 pt-2 justify-content-between mx-0">
+      <div class="container-fluid row flex-row flex-nowrap pb-4 pt-2 justify-content-between mx-0">
 
         <div class="mx-auto w-full md:w-4/5 px-4">
           <div class="container my-8">
@@ -172,7 +174,7 @@
               </button>
             </div>
           </div>
-          <div id="scrollContainer" class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mb-8">
+          <div class="flex flex-wrap items-start mb-8 slider">
             <div class="flex-none w-2/3 md:w-1/3 mr-8 md:pb-4 border rounded-lg">
                 <div class="aspect-w-16 aspect-h-9">
 
@@ -437,14 +439,14 @@
       <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-5">
         <!-- Tailwind Elements section -->
         <div class="">
-          <img class="mb-4 flex items-center justify-center w-24 md:justify-start" src="img/Logotype.png" alt="">
+          <img class="mb-4 flex items-center justify-center w-24 md:justify-start" src="/img/Logotype.png" alt="">
           <p class="text-white">Collaboration platform for mordern team </p>
         </div>
         <!-- Products section -->
         <div class="">
           <h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start text-blue-800">Company</h6>
           <p class="mb-4">
-            <a href="index.html" class="text-neutral-600 dark:text-neutral-200">Product</a>
+            <a href="/index.html" class="text-neutral-600 dark:text-neutral-200">Product</a>
           </p>
           <p class="mb-4">
             <a href="blog.html" class="text-neutral-600 dark:text-neutral-200">Blog</a>
@@ -506,7 +508,46 @@
     </div>
   </footer>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+        arrows:true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  </script>
 </body>
 
 </html>
