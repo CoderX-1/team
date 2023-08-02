@@ -1853,3 +1853,6 @@ video {
     line-height: 1.75rem;
   }
 }
+.banner{
+  background-image: url(/img/banner.png);
+}
