@@ -1865,4 +1865,12 @@ video {
   
 }
 .slick-prev {
-    left: -19px !important;
+    left: -19px !important;}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.drop{
+  left: -3rem;
+  top: 3rem;
+}
