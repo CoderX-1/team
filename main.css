@@ -1858,5 +1858,11 @@ video {
     img/banner.png);
 }
 .slick-next {
-    right: 0px !important;;
+    right: 0px !important;
 }
+.slick-prev:before, .slick-next:before {
+  color:black !important;
+  
+}
+.slick-prev {
+    left: -19px !important;
