@@ -1858,5 +1858,5 @@ video {
     img/banner.png);
 }
 .slick-next {
-    right: 0px;
+    right: 0px !important;;
 }
